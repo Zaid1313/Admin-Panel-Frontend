@@ -24,7 +24,7 @@ code {
 #sidebar ul {
   list-style: none;
   padding: 0;
-  margin: 20px 0; /* Adjust the top margin for the list */
+  margin: 20px 0;
 }
 
 #sidebar ul li a {
@@ -37,8 +37,27 @@ code {
 
 #sidebar ul li a:hover {
   color: red;
-  background-color: #333; /* Add a background color on hover */
+  background-color: #333; 
 }
 
+@media (max-width: 1400px) {
+  #sidebar {
+    position: static;
+    height: auto;
+  }
 
+  #sidebar h1 {
+    text-align: center;
+    padding: 20px 0;
+  }
 
+  #sidebar ul {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  #sidebar ul li {
+    display: inline-block;
+  }
+}
